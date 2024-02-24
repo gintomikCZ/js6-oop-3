@@ -1,0 +1,85 @@
+tabulka persons
+id, first, last, companyid,
+______________________
+1, Karel, Houska, 1
+2, Franta, Rohlík, 1
+3, Eva, Jiná, 1
+
+
+tabulka companies
+id, company, city, ...
+______________________
+1, AB s.r.o., Brno
+id = primary key
+
+relace 1:N
+foreign key
+
+
+(
+relace 1:1
+idcards
+id, dateofissue, officeofissue
+)
+
+relace M : N
+______________________
+
+tabulka actors
+id, name, dateofbirth, country, lang
+1, actor1, ....
+2, actor2
+
+tabulka movies
+id, moviename, date, director, genre, length
+1, movie1 ...
+2, movie2
+
+tabulka actorsmovies
+id, actorid, movieid, role, oscar, honorar
+______________________
+1, 1, 1, murder, true
+2, 1, 2, prince, false
+3, 2, 1
+
+______________________
+
+tabulka employees
+id, name, positionid
+______________________
+1, Karel, 1
+2, Pepa, 1
+3, Pepa, 1
+4, Ilona, 1
+
+tabulka positions
+id, position
+
+1, manager
+2, secretary
+
+employees - positions N : 1
+
+
+______________________
+TODO
+
+projects
+id, project, description
+1, zahrada, .....
+2, coding, ....
+
+tasks
+id, task, description, date, completed, priority, projectid
+1, posekat, ...., ...., false, 3, 1, 1
+2, SDA lesson, ...., ...., false, 2, 2
+
+persons
+id, name
+1, Karel
+2, Franta
+
+personstasks
+id, personid, taskid
+1, 1, 1
+2, 2, 1
